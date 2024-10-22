@@ -1,0 +1,48 @@
+body {
+  background-color: #f9f9f9;
+}
+
+ .sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100vh;
+} 
+
+.newsfeed {
+  padding: 20px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+}
+
+
+img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  
+}
+
+@media (max-width: 767.98px) {
+  .navbar .form-control {
+    width: 100%; /* Make the search bar full width on mobile */
+  }
+
+  .navbar .nav-link img {
+    width: 30px; /* Reduce profile image size on mobile */
+  }
+
+  .navbar .btn {
+    padding: 0.375rem 0.75rem; /* Adjust button padding on mobile */
+  }
+
+  .navbar .nav-link .badge {
+    font-size: 0.75rem; /* Adjust badge size on mobile */
+  }
+}

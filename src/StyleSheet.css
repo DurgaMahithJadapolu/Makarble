@@ -1,0 +1,205 @@
+/* CSS for the container */
+.contact-container {
+  position: relative; /* This will serve as a relative parent for the button */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+/* Button styling */
+.btn-right-top {
+  position: absolute; /* Absolute positioning inside the relative parent */
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none; 
+  padding-left: 0;        
+  margin: 0;             
+}
+.Showall-bt{
+  border: none;
+  color: blue;
+  background: none;
+  font-size: small;
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+
+}
+
+.newsfeed {
+  max-width: 800px; /* Set a max width for the newsfeed */
+  margin: auto; /* Center the newsfeed */
+}
+
+@media (max-width: 576px) {
+  .newsfeed {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .newsfeed .Card {
+    margin-bottom: 10px; /* Reduce space between cards on mobile */
+  }
+
+  .newsfeed .Card.Header {
+    flex-direction: column; /* Stack elements in the header on small screens */
+    align-items: flex-start; /* Align to start */
+  }
+
+  .newsfeed .Card.Body {
+    text-align: left; /* Align text to left for better readability */
+  }
+
+  .newsfeed .Card.Footer {
+    flex-direction: column; /* Stack footer elements */
+  }
+
+  .newsfeed .Card.Footer .Col {
+    margin-bottom: 10px; /* Space between footer elements */
+  }
+}
+
+/* Additional styles for button responsiveness */
+button {
+  width: 100%; /* Make buttons full width */
+  max-width: 140px; /* Restrict max width of buttons */
+}
+
+@media (min-width: 576px) {
+  button {
+    width: auto; /* Auto width for larger screens */
+  }
+}
+
+
+
+
+
+/* Ensure proper spacing on smaller screens */
+@media (max-width: 768px) {
+  .btn-right-top {
+    top: 10px; /* Adjust the top margin for mobile screens */
+    right: 10px; /* Adjust the right margin for mobile screens */
+  }
+}
+.btb{
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+ .Expand-bt{
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  border-color: lightgreen;
+  color: white;
+ }
+ .board-item { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Ensures long words wrap to the next line */
+  white-space: normal; /* Allows the text to wrap normally */
+  max-width: 200px; /* Adjust this width as needed */
+  overflow: hidden; /* Hides overflow content */
+}
+
+.board-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: cover; /* Ensures the image fits well */
+}
+.right-sidebar{
+  width: 100%;
+  background-color: aquamarine;
+}
+.form-check-label{
+  margin: 0px;
+  font-size: 9px;
+  text-align: start;
+}
+
+.footer-section {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer-image-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ftimg {
+  width: 90%;
+  height: auto;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.instagram :hover{
+  color:red;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #007bff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
